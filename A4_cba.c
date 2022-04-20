@@ -31,7 +31,7 @@ int main(){
     
     timespec_get(&ts, TIME_UTC);
     unsigned long long  int start = ts.tv_nsec;
-    for (int j=0; j<n; j++){            //c
+    for (int k=0; k<n; k++){            //c
         for (int j=0; j<n; j++){        //b
             for (int i=0; i<n; i++){        //a
                 ans[i][j] += mat1[i][k] * mat2[k][j];
